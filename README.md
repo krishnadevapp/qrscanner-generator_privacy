@@ -1,0 +1,1 @@
+# qrscanner-generator_privacy
