@@ -5,133 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - QR Scanner QR Generator</title>
     <style>
+        :root {
+            --primary-color: #4CAF50;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --border-radius: 12px;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+            margin: 0;
             padding: 20px;
-            background-color: #f9f9f9;
         }
         .container {
-            background-color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #2c3e50;
+        header {
             text-align: center;
-            margin-bottom: 5px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
         }
-        .last-updated {
-            text-align: center;
-            color: #7f8c8d;
-            font-size: 0.9em;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #3498db;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .highlight-box {
-            background-color: #e8f8f5;
-            border-left: 4px solid #2ecc71;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .check-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #27ae60;
-        }
-        .check-item::before {
-            content: "✓";
-            margin-right: 10px;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            color: #7f8c8d;
-            font-size: 0.85em;
-            border-top: 1px solid #ecf0f1;
-            padding-top: 20px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        h1 { color: var(--primary-color); margin-bottom: 10px; }
+        .last-updated { font-size: 0.9em; color: var(--text-secondary); }
+        h2 { border-left: 4px solid var(--primary-color); padding-left: 15px; color: var(--text-primary); margin-top: 30px; }
+        .section { margin-bottom: 25px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .highlight-box { background-color: #f1f8f1; border-radius: var(--border-radius); padding: 20px; margin: 20px 0; }
+        .highlight-item { display: flex; align-items: center; margin-bottom: 15px; font-weight: 600; }
+        .check-icon { color: #4CAF50; margin-right: 15px; font-size: 1.2em; }
+        .permission-card { border: 1px solid #eee; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .permission-name { font-weight: bold; display: block; margin-bottom: 5px; }
+        .permission-desc { color: var(--text-secondary); font-size: 0.9em; }
+        footer { margin-top: 50px; text-align: center; padding-top: 20px; border-top: 1px solid #eee; color: var(--text-secondary); font-size: 0.9em; }
+        .contact-email { color: var(--primary-color); text-decoration: none; font-weight: bold; }
+        @media (max-width: 600px) { .container { padding: 20px; } }
     </style>
 </head>
 <body>
-
 <div class="container">
-    <h1>Your Privacy Matters</h1>
-    <p class="last-updated">Last Updated: January 15, 2026</p>
-
-    <h2>Introduction</h2>
-    <p>Welcome to <strong>QR Scanner QR Generator</strong> ("the App"). We are committed to protecting your privacy and ensuring a secure experience. This Privacy Policy explains how we handle your information when you use our App.</p>
-
-    <h2>Information We Collect</h2>
-    <div class="highlight-box">
-        <div class="check-item">We do NOT collect personal data</div>
-        <div class="check-item">We do NOT track your location</div>
-        <div class="check-item">We do NOT share data with third parties</div>
+    <header>
+        <h1>Privacy Policy</h1>
+        <p><strong>QR Scanner QR Generator</strong></p>
+        <p class="last-updated">Last Updated: January 15, 2026</p>
+    </header>
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>Welcome to QR Scanner QR Generator ("the App"). We are committed to protecting your privacy and ensuring a secure experience. This Privacy Policy explains how we handle your information when you use our App.</p>
     </div>
-    <p>The App operates entirely offline and locally on your device. All QR codes you scan or generate are processed locally and are never transmitted to any server.</p>
-
-    <h2>Permissions Used</h2>
-    <p>The App requests the following permissions to provide its core functionality:</p>
-    
-    <ul>
-        <li><strong>Camera:</strong> Required to scan QR codes and barcodes.</li>
-        <li><strong>Storage:</strong> Required to save generated QR codes to your device.</li>
-    </ul>
-
-    <h2>Data Security</h2>
-    <p>Your data security is our priority. Since all processing occurs locally on your device:</p>
-    <ul>
-        <li>No data is transmitted over the internet</li>
-        <li>No cloud storage is used</li>
-        <li>Your scan history remains on your device</li>
-        <li>Uninstalling the app removes all associated data</li>
-    </ul>
-
-    <h2>Children's Privacy</h2>
-    <p>This App is suitable for users of all ages. We do not knowingly collect any personal information from children or adults. The App does not require account creation or any personal data entry.</p>
-
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this policy. We encourage you to review this policy periodically.</p>
-
-    <h2>Contact Us</h2>
-    <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy or the App, please contact us:</p>
-    <p><strong>Email:</strong> <a href="mailto:contact.krishna.apps@gmail.com">contact.krishna.apps@gmail.com</a></p>
-
+    <div class="section">
+        <h2>Information We Collect</h2>
+        <div class="highlight-box">
+            <div class="highlight-item"><span class="check-icon">✓</span> We do NOT collect personal data</div>
+            <div class="highlight-item"><span class="check-icon">✓</span> We do NOT track your location</div>
+            <div class="highlight-item"><span class="check-icon">✓</span> We do NOT share data with third parties</div>
+        </div>
+        <p>The App processes all QR codes and barcodes locally on your device. Scanned data is never transmitted to our servers. Your scan history and bookmarks are stored only on your device.</p>
+    </div>
+    <div class="section">
+        <h2>Permissions Used</h2>
+        <p>The App requests the following permissions to provide its core functionality:</p>
+        <div class="permission-card"><span class="permission-name">Camera</span><span class="permission-desc">Required to scan QR codes and barcodes.</span></div>
+        <div class="permission-card"><span class="permission-name">Storage</span><span class="permission-desc">Required to save generated QR codes to your device.</span></div>
+        <div class="permission-card"><span class="permission-name">Wi-Fi</span><span class="permission-desc">Used to connect to Wi-Fi networks from scanned QR codes.</span></div>
+    </div>
+    <div class="section">
+        <h2>Data Security</h2>
+        <p>Your data security is our priority:</p>
+        <ul>
+            <li>All QR/barcode processing happens locally on your device.</li>
+            <li>No personal data is sent to our servers.</li>
+            <li>Your scan history remains on your device only.</li>
+            <li>Uninstalling the app removes all associated data.</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, concerns, or suggestions, please contact us:</p>
+        <p>Email: <a href="mailto:contact.krishna.apps@gmail.com" class="contact-email">contact.krishna.apps@gmail.com</a></p>
+    </div>
     <footer>
         <p>By using this App, you agree to this Privacy Policy.</p>
         <p>&copy; 2026 Krishna Dev. All Rights Reserved.</p>
     </footer>
 </div>
-
 </body>
 </html>
